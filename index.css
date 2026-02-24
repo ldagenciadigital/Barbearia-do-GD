@@ -1,0 +1,131 @@
+@ import url ( ' https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap ' ) ; 
+@ base tailwind ; 
+@ componentes tailwind ; 
+@ tailwind utilities ; 
+/* Definição do sistema de design. Todas as cores, gradientes, fontes, etc. devem ser definidos aqui.
+Todas as cores DEVEM ser HSL.
+*/
+@ camada base {  
+  : raiz { 
+- - fundo : 0 0 % 100 % ;       
+- - primeiro plano : 222,284 % 4,9 % ;​​​​       
+- - fundo : 30 10 % 8 % ;       
+- - primeiro plano : 40 20 % 90 % ;
+
+- - cartão : 0 0 % 100 % ;       
+- - cartão - primeiro plano : 222 . 2 84 % 4 . 9 % ;      
+- - cartão : 30 10 % 12 % ;       
+- - cartão - primeiro plano : 40 20 % 90 % ;    
+
+- - popover : 0 0 % 100 % ;       
+- - popover - primeiro plano : 222 . 2 84 % 4 . 9 % ;     
+- - popover : 30 10 % 12 % ;       
+- - popover - primeiro plano : 40 20 % 90 % ;
+
+- - primário : 222,2 47,4 % 11,2 % ;​​​​​​       
+- - primário - primeiro plano : 210 40 % 98 % ;       
+- - primário : 40 70 % 50 % ;       
+- - primário - primeiro plano : 30 10 % 8 % ;
+
+- - secundário : 210 40 % 96,1 % ;​​       
+- - secundário - primeiro plano : 222 . 2 47 . 4 % 11 . 2 % ;       
+- - secundário : 30 8 % 18 % ;       
+- - secundário - primeiro plano : 40 20 % 85 % ;
+
+- - silenciado : 210 40 % 96,1 % ;​​       
+- - silenciado - primeiro plano : 215,4 16,3 % 46,9 % ;​​​​​       
+- - silenciado : 30 8 % 16 % ;       
+- - silenciado - primeiro plano : 30 10 % 55 % ;
+
+- - acento : 210 40 % 96,1 % ;​​       
+- - acento - primeiro plano : 222 . 2 47 . 4 % 11 . 2 % ;       
+- - acento : 40 70 % 50 % ;       
+- - acento - primeiro plano : 30 10 % 8 % ;       
+
+- - destrutivo : 0 84,2 % 60,2 % ;​​​​   
+    - - destrutivo - primeiro plano : 210 40 % 98 % ;
+    
+    - - fronteira : 214 . 3 31 . 8 % 91 . 4 % ;       
+- - entrada : 214 . 3 31 . 8 % 91 . 4 % ;       
+- - anel : 222 . 2 84 % 4 . 9 % ;       
+- - borda : 30 10 % 20 % ;       
+- - entrada : 30 10 % 20 % ;       
+- - anel : 40 70 % 50 % ;
+
+- - raio : 0,5rem ;​​
+
+- - barra lateral - fundo : 0 0 % 98 % ;       
+- - brilho dourado : 40 80 % 55 % ;​       
+- - dourado - suave : 40 40 % 35 % ;
+
+- - barra lateral - primeiro plano : 240 5,3 % 26,1 % ;​​       
+- - barra lateral - primária : 240 5 . 9 % 10 % ;       
+- - barra lateral - primário - primeiro plano : 0 0 % 98 % ;       
+- - barra lateral - acento : 240 4,8 % 95,9 % ;​​​
+- - barra lateral - acento - primeiro plano : 240 5 . 9 % 10 % ;       
+- - barra lateral - borda : 220 13 % 91 % ;       
+- - barra lateral - anel : 217 . 2 91 . 2 % 59 . 8 % ;       
+}
+. escuro {   
+- - fundo : 222 . 2 84 % 4 . 9 % ;       
+- - primeiro plano : 210 40 % 98 % ;       
+- - cartão : 222 . 2 84 % 4 . 9 % ;       
+- - cartão - primeiro plano : 210 40 % 98 % ;       
+- - popover : 222,284 % 4,9 % ;       
+- - popover - primeiro plano : 210 40 % 98 % ;
+- - primário : 210 40 % 98 % ;       
+- - primário - primeiro plano : 222 . 2 47 . 4 % 11 . 2 % ;       
+- - secundário : 217,2 32,6 % 17,5 % ;​​​​​​       
+- - secundário - primeiro plano : 210 40 % 98 % ;       
+- - silenciado : 217 . 2 32 . 6 % 17 . 5 % ;       
+- - silenciado - primeiro plano : 215 20,2 % 65,1 % ;​​​
+- - acento : 217 . 2 32 . 6 % 17 . 5 % ;       
+- - acento - primeiro plano : 210 40 % 98 % ;       
+- - destrutivo : 0 62,8 % 30,6 % ;​​​​       
+- - destrutivo - primeiro plano : 210 40 % 98 % ;
+
+- - fronteira : 217 . 2 32 . 6 % 17 . 5 % ;       
+- - entrada : 217 . 2 32 . 6 % 17 . 5 % ;       
+- - anel : 212,7 26,8 % 83,9 % ;​​​​​​       
+- - barra lateral - fundo : 240 5 . 9 % 10 % ;       
+- - barra lateral - primeiro plano : 240 4,8 % 95,9 % ;​​       
+- - barra lateral - primária : 224 . 3 76 . 3 % 48 % ;
+- - barra lateral - primário - primeiro plano : 0 0 % 100 % ;       
+- - barra lateral - acento : 240 3,7 % 15,9 % ;​​​       
+- - barra lateral - acento - primeiro plano : 240 4,8 % 95,9 % ;​​       
+- - barra lateral - borda : 240 3,7 % 15,9 % ;​​​       
+- - barra lateral - anel : 217 . 2 91 . 2 % 59 . 8 % ;
+- - barra lateral - fundo : 30 10 % 10 % ;       
+- - barra lateral - primeiro plano : 40 20 % 90 % ;       
+- - barra lateral - primária : 40 70 % 50 % ;       
+- - barra lateral - primário - primeiro plano : 30 10 % 8 % ;       
+- - barra lateral - acento : 30 8 % 18 % ;
+- - barra lateral - acento - primeiro plano : 40 20 % 90 % ;       
+- - barra lateral - borda : 30 10 % 20 % ;       
+- - barra lateral - anel : 40 70 % 50 % ;
+}
+}
+  }
+  corpo { 
+@ aplicar bg - fundo texto - primeiro plano ;      
+@ aplicar bg - texto de fundo - fonte de primeiro plano - corpo ;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {        
+@ aplicar fonte - exibir ;
+}
+}
+@ utilitários de camada {
+. texto - ouro - gradiente {   
+@ aplicar fundo - recorte - texto texto - transparente ;
+background - image : linear - gradient ( 135deg , hsl ( 40 70 % 50 % ) , hsl ( 40 80 % 65 % ) , hsl ( 40 70 % 50 % ) ) ;              
+}  
+. borda dourada {​
+border - image : linear - gradient ( 135deg , hsl ( 40 70 % 50 % ) , hsl ( 40 80 % 65 % ) ) 1 ;            
+}
+
+. seção - divisor {   
+@ aplicar w - 24 h - 0 . 5 mx - auto ;       
+fundo : linear - gradiente ( 90 graus , transparente , hsl ( 40 70 % 50 % ) , transparente ) ;          
+}  
+}
